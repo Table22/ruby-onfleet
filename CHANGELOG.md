@@ -17,3 +17,16 @@ Added
 * Added README support for spanish
 * Included throttling constraints for 20 API requests per second using faraday-rate_limiter
 * Updated headers on initialization to allow for custom headers
+
+## [1.0.3](https://github.com/onfleet/ruby-onfleet/releases/tag/v1.0.3) - 2023-06-05
+Added
+* Updated package.json to reference relative path
+* Updated utils.rb to require error classes
+
+## [1.0.4](https://github.com/onfleet/ruby-onfleet/releases/tag/v1.0.4) - 2024-05-29
+Added
+* Added support for Worker's Route Delivery Manifest
+
+## [1.0.5](https://github.com/onfleet/ruby-onfleet/releases/tag/v1.0.5) - 2024-06-26
+Added
+* Update to RubyGems release
