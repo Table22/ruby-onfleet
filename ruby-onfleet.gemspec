@@ -10,13 +10,15 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.metadata    = { 'source_code_uri' => 'https://github.com/onfleet/ruby-onfleet' }
 
-  s.add_dependency('faraday', '~> 2.9.0')
-  s.add_dependency('faraday-net_http', '~> 3.1.0')
-  s.add_dependency('faraday-rate_limiter', '~> 0.0.4')
-  s.add_dependency('json', '~> 2.6.3')
+  # Pin to current major versions but allow minor version updates.
+  # These libraries are long-standing with no history of breaking changes in minor versions.
+  s.add_dependency('faraday', '< 3')
+  s.add_dependency('faraday-net_http', '< 4')
+  s.add_dependency('faraday-rate_limiter', '< 1')
+  s.add_dependency('json', '< 3')
 
-  s.add_development_dependency('rspec', '~> 3.12.0')
-  s.add_development_dependency('webmock', '~> 3.18.1')
+  s.add_development_dependency('rspec', '< 4')
+  s.add_development_dependency('webmock', '< 4')
 
   s.files         = `git ls-files`.split("\n")
   s.require_paths = ['lib']
